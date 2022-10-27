@@ -1,14 +1,17 @@
 import d20 from './d20large.svg';
 import './App.css';
-import { roll, disadvantage, advantage } from './Roll';
+import { roll, disadvantage, advantage, diceMod } from './Roll';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={d20} className="App-logo" alt="logo" />
+        <div className="container">
+          <img src={d20} className="App-logo" alt="logo" />
+          <img src={d20} className="App-logo" alt="logo" id="second" style={{display:'none'}}/>
+        </div>
         <div>
-          <p id="emote">...</p>
+          <p className="emote" id="emote">...</p>
         </div>
         <p id="total">
           Time to roll.
@@ -22,10 +25,18 @@ function App() {
         <div>
           <p className="mod-text">Dice Modifier</p>
         </div>
-        <div>
-          <form>
-            <input  className="modifier" type="number" id="modifier" name="modifier" min="-99" max="99"></input>
-          </form>
+        <div className="container">
+          <button className="btn-mod" onClick={diceMod} id="neg5">-5</button>
+          <button className="btn-mod" onClick={diceMod} id="neg4">-4</button>
+          <button className="btn-mod" onClick={diceMod} id="neg3">-3</button>
+          <button className="btn-mod" onClick={diceMod} id="neg2">-2</button>
+          <button className="btn-mod" onClick={diceMod} id="neg1">-1</button>
+          <button className="btn-mod" onClick={diceMod} id="zero">0</button>
+          <button className="btn-mod" onClick={diceMod} id="pos1">+1</button>
+          <button className="btn-mod" onClick={diceMod} id="pos2">+2</button>
+          <button className="btn-mod" onClick={diceMod} id="pos3">+3</button>
+          <button className="btn-mod" onClick={diceMod} id="pos4">+4</button>
+          <button className="btn-mod" onClick={diceMod} id="pos5">+5</button>
         </div>
       </header>
     </div>

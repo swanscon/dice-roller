@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -97,11 +97,26 @@
   border-color:rgb(104, 4, 24)
 }
 
-
-.modifier {
+.btn-mod {
+  background-color:rgb(196, 196, 196);
+  color:aliceblue;
+  border-style: none;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
   font-size: large;
 }
+.btn-mod:hover{
+  background-color:rgb(153, 153, 153);
+}
+.btn-mod:focus{
+  border-style: inset;
+  border-color:rgb(59, 59, 59)
+}
 
-.mod-text {
-  font-size: medium;
+.emote{
+  font-size: 72px;
 }
