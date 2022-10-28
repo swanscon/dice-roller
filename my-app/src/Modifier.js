@@ -12,9 +12,9 @@ function DiceMod() {
 
     return (
         <div>
-            <p>Modifier: {posMod}{mod}</p>
+            <p id="modifier">Modifier: {posMod}{mod}</p>
             <form>
-                <input type="number" id="modifier" onChange={(e) => setMod(e.target.value)}/>
+                <input type="number" onChange={(e) => setMod(e.target.value)}/>
             </form>
         </div>
     )

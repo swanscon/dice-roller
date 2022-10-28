@@ -1,8 +1,31 @@
+import { useState } from 'react';
+
+let currentMod = 0;
+let currentSymbol = '';
+
+function DiceMod() {
+    const [mod, setMod] = useState('')
+    if (mod >= 0) {
+        currentSymbol = '+'
+    } else if (mod < 0){
+        currentSymbol = '-'
+    };
+    currentMod = mod;
+
+    return (
+        <div>
+            <p id="modifier">Modifier: {currentSymbol}{Math.abs(mod)}</p>
+            <form>
+                <input type="number" onChange={(e) => setMod(e.target.value)}/>
+            </form>
+        </div>
+    )
+}
+
 let adv = false;
 let dis = false;
 let rollValue = 0;
 let secondValue = 0;
-let currentMod = 0;
 
 export function roll() {
     document.getElementById("second").style.display = "none";
@@ -21,13 +44,13 @@ export function roll() {
         }
         dis = false;
     }
-    document.querySelector("#emote").innerHTML = (rollValue + 1);
+    document.querySelector("#emote").innerHTML = (rollValue + 1 + Number(currentMod));
     if (rollValue === 0) {
-        document.querySelector("#total").innerHTML = "Natural 1...";
+        document.querySelector("#total").innerHTML = "You rolled a natural 1... " + currentSymbol + ' ' + String(Math.abs(currentMod));
     } else if (rollValue === 19) {
-        document.querySelector("#total").innerHTML = "Natural 20!!!";
+        document.querySelector("#total").innerHTML = "You rolled a natural 20! " + currentSymbol + ' ' + String(Math.abs(currentMod));
     } else {
-        document.querySelector("#total").innerHTML = "...";
+        document.querySelector("#total").innerHTML = "You rolled " + (rollValue + 1) + ' ' + currentSymbol + ' ' + String(Math.abs(currentMod));
     }
 }
 
@@ -46,3 +69,5 @@ export function disadvantage() {
         document.querySelector("#total").innerHTML = "Roll with Disadvantage";
     }
 }
+
+export default DiceMod;

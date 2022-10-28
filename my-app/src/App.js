@@ -1,7 +1,7 @@
 import d20 from './d20large.svg';
 import './App.css';
 import { roll, disadvantage, advantage } from './Roll';
-import DiceMod from './Modifier';
+import DiceMod from './Roll';
 
 function App() {
   return (
