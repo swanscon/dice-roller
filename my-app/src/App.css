@@ -73,8 +73,9 @@
   background-color:rgb(19, 129, 43);
 }
 .btn-adv:focus{
-  border-style: inset;
-  border-color: rgb(1, 63, 1);
+  color:rgb(7, 80, 17);
+  font-weight: bolder;
+  background-color:rgb(171, 199, 171);
 }
 
 .btn-dis {
@@ -93,8 +94,9 @@
   background-color:rgb(158, 27, 27);
 }
 .btn-dis:focus{
-  border-style: inset;
-  border-color:rgb(104, 4, 24)
+  color:rgb(80, 7, 7);
+  font-weight: bolder;
+  background-color:rgb(230, 191, 199);
 }
 
 .btn-mod {

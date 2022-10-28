@@ -21,13 +21,13 @@ export function roll() {
         }
         dis = false;
     }
-    document.querySelector("#total").innerHTML = (rollValue + 1);
+    document.querySelector("#emote").innerHTML = (rollValue + 1);
     if (rollValue === 0) {
-        document.querySelector("#emote").innerHTML = "Natural 1...";
+        document.querySelector("#total").innerHTML = "Natural 1...";
     } else if (rollValue === 19) {
-        document.querySelector("#emote").innerHTML = "Natural 20!!!";
+        document.querySelector("#total").innerHTML = "Natural 20!!!";
     } else {
-        document.querySelector("#emote").innerHTML = "...";
+        document.querySelector("#total").innerHTML = "...";
     }
 }
 
