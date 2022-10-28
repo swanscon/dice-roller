@@ -15,8 +15,8 @@ function DiceMod() {
     return (
         <div>
             <p id="modifier">Modifier: {currentSymbol}{Math.abs(mod)}</p>
-            <form>
-                <input type="number" onChange={(e) => setMod(e.target.value)}/>
+            <form className="modifier">
+                <input type="number" min="-50" max="50" onChange={(e) => setMod(e.target.value)}/>
             </form>
         </div>
     )

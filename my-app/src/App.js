@@ -29,4 +29,11 @@ function App() {
   );
 }
 
+//TO DO:
+//display multiple dice numbers for ADV/DIS rolls
+//offClick functionality for ADV and DIS buttons
+//animate die/dice onClick for ROLL button, then wait, then execute logic
+//CSS for DiceMod form (may need to use jQuery)
+//resize/format page and other visuals
+
 export default App;
