@@ -1,6 +1,7 @@
 import d20 from './d20large.svg';
 import './App.css';
-import { roll, disadvantage, advantage, diceMod } from './Roll';
+import { roll, disadvantage, advantage } from './Roll';
+import DiceMod from './Modifier';
 
 function App() {
   return (
@@ -22,22 +23,7 @@ function App() {
           <button className="btn-roll" onClick={roll}>ROLL</button>
           <button className="btn-dis" onClick={disadvantage}>DIS</button>
         </div>
-        <div>
-          <p className="mod-text">Dice Modifier</p>
-        </div>
-        <div className="container">
-          <button className="btn-mod" onClick={diceMod} id="neg5">-5</button>
-          <button className="btn-mod" onClick={diceMod} id="neg4">-4</button>
-          <button className="btn-mod" onClick={diceMod} id="neg3">-3</button>
-          <button className="btn-mod" onClick={diceMod} id="neg2">-2</button>
-          <button className="btn-mod" onClick={diceMod} id="neg1">-1</button>
-          <button className="btn-mod" onClick={diceMod} id="zero">0</button>
-          <button className="btn-mod" onClick={diceMod} id="pos1">+1</button>
-          <button className="btn-mod" onClick={diceMod} id="pos2">+2</button>
-          <button className="btn-mod" onClick={diceMod} id="pos3">+3</button>
-          <button className="btn-mod" onClick={diceMod} id="pos4">+4</button>
-          <button className="btn-mod" onClick={diceMod} id="pos5">+5</button>
-        </div>
+        <DiceMod />
       </header>
     </div>
   );

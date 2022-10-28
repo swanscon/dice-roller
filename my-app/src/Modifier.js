@@ -1,21 +1,23 @@
-import React from 'react';
+import { useState } from 'react';
 
-export function diceMod() {
-    const input = props => {
-        const[textInput, setTextInput] = React.useState('');
+function DiceMod() {
+    const [mod, setMod] = useState('')
 
-        const handleChange = (event) => {
-            props.send(textInput);
-            setTextInput(event.target.value)
-        }
+    let posMod = ''
+    if (mod > 0) {
+        posMod = '+';
+    } else {
+        posMod = '';
+    };
+
     return (
         <div>
-            <input onChange={handleChange} placeholder="Modifier here"></input>
+            <p>Modifier: {posMod}{mod}</p>
+            <form>
+                <input type="number" id="modifier" onChange={(e) => setMod(e.target.value)}/>
+            </form>
         </div>
     )
-    }
 }
 
-const domContainer = document.querySelector('#test_container');
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(diceMod));
+export default DiceMod;

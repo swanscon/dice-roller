@@ -46,8 +46,3 @@ export function disadvantage() {
         document.querySelector("#total").innerHTML = "Roll with Disadvantage";
     }
 }
-
-export function diceMod() {
-    currentMod = document.getElementById("modifier");
-    console.log(currentMod);
-}

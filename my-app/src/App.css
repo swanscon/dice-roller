@@ -114,10 +114,10 @@
 .btn-mod:hover{
   background-color:rgb(153, 153, 153);
 }
-.btn-mod:focus{
+/* .btn-mod:focus{
   border-style: inset;
   border-color:rgb(59, 59, 59)
-}
+} */
 
 .emote{
   font-size: 72px;
