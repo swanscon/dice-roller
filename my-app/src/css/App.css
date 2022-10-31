@@ -1,0 +1,49 @@
+@import "Buttons.css";
+@import "Dice.css";
+@import "Toggle.css";
+@import "Modifier.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #d3d3d3;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+.App-link {
+  color: #273974;
+}
+
+.column{
+  float:left;
+  width:33%;
+}
+
+.row:after{
+  display:table;
+  content:"";
+  clear:both;
+}
+
+.emote{
+  font-size: 72px;
+}
+
+.show{
+  display:inline;
+}
+
+.hide{
+  display: none;
+}

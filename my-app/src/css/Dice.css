@@ -1,0 +1,16 @@
+.shake{
+    animation: shake .5s infinite;
+  }
+  @keyframes shake{
+    0%{
+      display:inline;
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(-8deg);
+    }
+    100%{
+      display:none;
+      transform: rotate(8deg);
+    }
+  }

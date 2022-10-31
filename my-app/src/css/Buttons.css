@@ -1,0 +1,56 @@
+.btn-roll {
+    background-color:rgb(84, 93, 177);
+    color:aliceblue;
+    border-style: none;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 6px;
+    font-size: large;
+  }
+  .btn-roll:hover{
+    background-color:rgb(38, 51, 170);
+    cursor: pointer;
+  }
+  .btn-adv {
+    background-color:rgb(72, 180, 78);
+    color:aliceblue;
+    border-style: none;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-size: large;
+  }
+  .btn-adv:hover{
+    background-color:rgb(19, 129, 43);
+  }
+  .btn-adv:focus{
+    color:rgb(7, 80, 17);
+    font-weight: bolder;
+    background-color:rgb(171, 199, 171);
+  }
+  .btn-dis {
+    background-color:rgb(197, 82, 82);
+    color:aliceblue;
+    border-style: none;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-size: large;
+  }
+  .btn-dis:hover{
+    background-color:rgb(158, 27, 27);
+  }
+  .btn-dis:focus{
+    color:rgb(114, 10, 10);
+    font-weight: bolder;
+    background-color:rgb(243, 174, 186);
+  }
