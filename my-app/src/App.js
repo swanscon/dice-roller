@@ -17,23 +17,36 @@ function App() {
         </p>
 
         <div className="row">
-          <div className="column">
+          {/* <div className="column">
             <p>Advantage</p>
             <label className="switch">
               <input type="checkbox" onInputCapture={advantage}/>
               <span className="slider round"></span>
             </label>  
-          </div>
-          <div className="column">
+          </div> */}
+          <div>
             <button className="btn-roll" onClick={roll}>ROLL</button>
           </div>
-          <div className="column">
+          {/* <div className="column">
             <p>Disadvantage</p>
             <label className="switch">
               <input type="checkbox" onInputCapture={disadvantage}/>
               <span className="slider round dis"></span>
             </label>  
-          </div>
+          </div> */}
+        </div>
+        <div className="row">
+          <fieldset className="multiswitch" data-theme="advdis">
+            <div className="slide-container">
+              <input type="radio" name="advdis" id="advdis1" checked/>
+              <label for="advdis1">Normal</label>
+              <input type="radio" name="advdis" id="advdis2"/>
+              <label for="advdis2">Advantage</label>
+              <input type="radio" name="advdis" id="advdis3"/>
+              <label for="advdis3">Disadvantage</label>
+              <a className="slide" aria-hidden="true"></a>
+            </div>
+          </fieldset>
         </div>
         <div>
           <DiceMod />
