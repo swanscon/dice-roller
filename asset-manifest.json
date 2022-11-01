@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dice-roller/static/css/main.c672ea80.css",
-    "main.js": "/dice-roller/static/js/main.deb5f1d0.js",
+    "main.css": "/dice-roller/static/css/main.0eda70ec.css",
+    "main.js": "/dice-roller/static/js/main.bf12ca4a.js",
     "static/js/787.28cb0dcd.chunk.js": "/dice-roller/static/js/787.28cb0dcd.chunk.js",
     "static/media/d20large.svg": "/dice-roller/static/media/d20large.d15adb58e687fa98a5953608965cbec1.svg",
     "index.html": "/dice-roller/index.html",
-    "main.c672ea80.css.map": "/dice-roller/static/css/main.c672ea80.css.map",
-    "main.deb5f1d0.js.map": "/dice-roller/static/js/main.deb5f1d0.js.map",
+    "main.0eda70ec.css.map": "/dice-roller/static/css/main.0eda70ec.css.map",
+    "main.bf12ca4a.js.map": "/dice-roller/static/js/main.bf12ca4a.js.map",
     "787.28cb0dcd.chunk.js.map": "/dice-roller/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c672ea80.css",
-    "static/js/main.deb5f1d0.js"
+    "static/css/main.0eda70ec.css",
+    "static/js/main.bf12ca4a.js"
   ]
 }
