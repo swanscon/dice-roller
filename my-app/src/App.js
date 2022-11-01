@@ -38,12 +38,12 @@ function App() {
         <div className="row">
           <fieldset className="multiswitch" data-theme="advdis">
             <div className="slide-container">
-              <input type="radio" name="advdis" id="advdis1" checked/>
-              <label for="advdis1">Normal</label>
-              <input type="radio" name="advdis" id="advdis2"/>
-              <label for="advdis2">Advantage</label>
-              <input type="radio" name="advdis" id="advdis3"/>
-              <label for="advdis3">Disadvantage</label>
+              <input type="radio" name="advdis" id="advdis1" checked onChange={e => {}}/>
+              <label htmlFor="advdis1">Normal</label>
+              <input type="radio" name="advdis" id="advdis2" onClick={advantage}/>
+              <label htmlFor="advdis2">Advantage</label>
+              <input type="radio" name="advdis" id="advdis3" onClick={disadvantage}/>
+              <label htmlFor="advdis3">Disadvantage</label>
               <a className="slide" aria-hidden="true"></a>
             </div>
           </fieldset>
