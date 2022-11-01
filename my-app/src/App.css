@@ -104,3 +104,18 @@
   height: 80px;
   font-size: large;
 } */
+
+.slidecontainer {
+  width: 350px;
+  position:relative;
+  margin: 0 auto;
+}
+
+.modifier {
+  width: 300px;
+  height: 50px;
+}
+
+.modifier::before{
+  display:none;
+}
